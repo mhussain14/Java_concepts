@@ -6,21 +6,30 @@ import java.util.Arrays;
 
 public class SetUP
 {
+    Javaconcept obj = new Javaconcept();
     public static void main(String[] args) throws Exception
     {
+        Javaconcept.reverse();
+        Javaconcept.gd();
+        Javaconcept.sum();
+        //Javaconcept.sume();
+        Javaconcept.SigleElement();
+        int result = Javaconcept.sumes(10);
+        System.out.println("Sum of k :" +result);
+
         //Sort();
         //Arraystring();
         //multidimentionalarray();
         //math();
-        //Printstring();
+        Printstring();
         //String str = "er355k3k322l";
-        //SumOfString();
+        SumOfString();
         //addgt();
-        //CountWord();
+        CountWord();
         revers();
-        Squre();
-        power();
-        prim_Number();
+        //Squre();
+        //power();
+        //prim_Number();
     }
     public static void Sort()
     {
@@ -67,9 +76,9 @@ public class SetUP
    }
    public static void SumOfString()
    {
-       String str1 = "dhj34dfhf9fs";
+       String str1 = "1";
        char[] ch = str1.toCharArray();
-       int sum = 0;
+       int sum = 2;
        for (int i = 0; i < ch.length; i++)
        {
            if (Character.isDigit(ch[i]))
@@ -85,6 +94,7 @@ public class SetUP
    public static void addgt()
    {
        int temp, size;
+
        int array[] = {10, 20, 25, 63, 96, 57};
 
        size = array.length;
@@ -111,15 +121,16 @@ public class SetUP
        for(int i =0; i<my.length(); i++)
        {
            //ch[i] = my.charAt(i);
-           //if(((i>0)&&(ch[i]!=' ')&&(ch[i-1]==' ') || ((ch[0]!=' ')&&(i==0))))
-            if(Character.isUpperCase(ch[i]))
+           if((ch[i]=='l')&&ch[i]=='L')
+            //if(Character.isUpperCase(ch[i]))
                count++;
        }
+       System.out.println("Total word is : "+my.length());
        System.out.print("Total word " +count);
    }
    public static void revers()
    {
-       int num = 12763;
+       int num = 100;
        int revers =0;
        System.out.println("Revers " +num);
        while (num!=0)
@@ -160,7 +171,7 @@ public class SetUP
          try
          {
              int i,m=0,flag=0;
-             int n=9;//it is the number to be checked
+             int n=47;//it is the number to be checked
              m=n/2;
              if(n==0||n==1)
              {
